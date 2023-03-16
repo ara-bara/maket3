@@ -1,0 +1,34 @@
+.menu{
+  height: 80px;
+  background-color: #777777;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu__list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu__link{
+  color: white;
+  padding: 0 10px 0 0;
+  margin: 0 10px 0 0;
+  border-right: 2px solid white;
+  &:last-child{
+    border-right: none;
+  }
+  &:hover{
+    text-decoration: 2px underline;
+  }
+}
+
+
+
