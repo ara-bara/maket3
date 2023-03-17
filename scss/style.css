@@ -127,6 +127,8 @@ header .container {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 10000000;
+  position: relative;
 }
 
 .menu__list {
@@ -148,6 +150,63 @@ header .container {
   text-decoration: 2px underline;
 }
 
+/* Slideshow container */
+.slider {
+  max-width: 1248px;
+  position: relative;
+  margin: auto;
+}
+.slider .container {
+  margin-top: -240px;
+  display: flex;
+  justify-content: space-between;
+}
+.slider .slick-arrow {
+  position: absolute;
+  z-index: 10;
+  width: 34px;
+  height: 61px;
+  font-size: 0;
+}
+.slider .slick-arrow.slick-prev {
+  left: 0;
+  margin-top: 155px;
+}
+.slider .slick-arrow.slick-next {
+  right: 0;
+  margin-top: -188px;
+}
+
+.slider__img {
+  margin-top: -62px;
+  z-index: 0;
+}
+
+/* Слайдер */
+/* Слайдер запущен */
+/* Слайдер с точками */
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+}
+
+/* Слайд */
+/* Слайд активный (показывается) */
+/* Слайд основной */
+/* Слайд по центру */
+/* Клонированный слайд */
+/* Стрелка */
+/* Стрелка влево */
+/* Стрелка вправо */
+/* Стрелка не активная */
+/* Точки (булиты) */
+/* Активная точка */
+/* Элемент точки */
 @media (max-width: 1200px) {
   .container {
     max-width: 970px;
