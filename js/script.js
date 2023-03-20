@@ -7,8 +7,12 @@ menu__button.addEventListener('click', function(){
 })
 
 /*slider*/
-
-
 $(document).ready(function(){
-    $('.slider').slick();
+    $('.slider').slick({
+        arrows:true,
+        dots:false,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        fade: true,
+    });
 });

@@ -1,26 +1,24 @@
 /* Slideshow container */
 .slider {
-  max-width: 1248px;
+  width: 1248px;
   position: relative;
   margin: auto;
-  .container{
-    margin-top: -240px;
-    display: flex;
-    justify-content: space-between;
-  }
   .slick-arrow{
     position: absolute;
+    background-color: #d1d1d1;
+    margin: -30px 0 0 0;
     z-index: 10;
     width: 34px;
     height: 61px;
     font-size: 0;
+    top: 50%;
     &.slick-prev{
-      left: 0;
-      margin-top: 155px;
+      left: 130px;
+      background: url('../img/sl_arrow_l.png') 0 0 / 100% no-repeat;
     }
     &.slick-next{
-      right: 0;
-      margin-top: -188px;
+      right: 150px;
+      background: url('../img/sl_arrow_r.png') 0 0 / 100% no-repeat;
     }
   }
 }
@@ -63,24 +61,4 @@
 /* Клонированный слайд */
 .slick-slide.slick-cloned{}
 
-/* Стрелка */
-.slick-arrow{}
 
-/* Стрелка влево */
-.slick-arrow.slick-prev{}
-
-/* Стрелка вправо */
-.slick-arrow.slick-next{}
-
-/* Стрелка не активная */
-.slick-arrow.slick-disabled{}
-
-/* Точки (булиты) */
-.slick-dots{}
-.slick-dots li{}
-
-/* Активная точка */
-.slick-dots li.slick-active{}
-
-/* Элемент точки */
-.slick-dots li button{}

@@ -152,29 +152,27 @@ header .container {
 
 /* Slideshow container */
 .slider {
-  max-width: 1248px;
+  width: 1248px;
   position: relative;
   margin: auto;
 }
-.slider .container {
-  margin-top: -240px;
-  display: flex;
-  justify-content: space-between;
-}
 .slider .slick-arrow {
   position: absolute;
+  background-color: #d1d1d1;
+  margin: -30px 0 0 0;
   z-index: 10;
   width: 34px;
   height: 61px;
   font-size: 0;
+  top: 50%;
 }
 .slider .slick-arrow.slick-prev {
-  left: 0;
-  margin-top: 155px;
+  left: 130px;
+  background: url("../img/sl_arrow_l.png") 0 0/100% no-repeat;
 }
 .slider .slick-arrow.slick-next {
-  right: 0;
-  margin-top: -188px;
+  right: 150px;
+  background: url("../img/sl_arrow_r.png") 0 0/100% no-repeat;
 }
 
 .slider__img {
@@ -200,13 +198,6 @@ header .container {
 /* Слайд основной */
 /* Слайд по центру */
 /* Клонированный слайд */
-/* Стрелка */
-/* Стрелка влево */
-/* Стрелка вправо */
-/* Стрелка не активная */
-/* Точки (булиты) */
-/* Активная точка */
-/* Элемент точки */
 @media (max-width: 1200px) {
   .container {
     max-width: 970px;
