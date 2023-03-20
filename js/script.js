@@ -13,6 +13,6 @@ $(document).ready(function(){
         dots:false,
         autoplay: true,
         autoplaySpeed: 4000,
-        fade: true,
+        fade: true
     });
 });

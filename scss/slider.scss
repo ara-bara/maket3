@@ -1,23 +1,24 @@
 /* Slideshow container */
 .slider {
-  width: 1248px;
+  max-width: 1248px;
+  height: auto;
   position: relative;
-  margin: auto;
+  margin: 0 auto;
   .slick-arrow{
     position: absolute;
     background-color: #d1d1d1;
     margin: -30px 0 0 0;
-    z-index: 10;
+    z-index: 1000;
     width: 34px;
     height: 61px;
     font-size: 0;
     top: 50%;
     &.slick-prev{
-      left: 130px;
+      left: 135px;
       background: url('../img/sl_arrow_l.png') 0 0 / 100% no-repeat;
     }
     &.slick-next{
-      right: 150px;
+      right: 145px;
       background: url('../img/sl_arrow_r.png') 0 0 / 100% no-repeat;
     }
   }
@@ -25,40 +26,13 @@
 .slider__img{
   margin-top: -62px;
   z-index: 0;
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
 }
-
-/* Слайдер */
-.slick-slider{}
-
-/* Слайдер запущен */
-.slick-slider.slick-initialized{}
-
-/* Слайдер с точками */
-.slick-slider.slick-dotted{}
-
-/* Ограничивающая оболочка */
 .slick-list {
   overflow: hidden;
 }
-
-/* Лента слайдов */
 .slick-track{
   display: flex;
 }
-
-/* Слайд */
-.slick-slide{}
-
-/* Слайд активный (показывается) */
-.slick-slide.slick-active{}
-
-/* Слайд основной */
-.slick-slide.slick-current{}
-
-/* Слайд по центру */
-.slick-slide.slick-center{}
-
-/* Клонированный слайд */
-.slick-slide.slick-cloned{}
-
-
