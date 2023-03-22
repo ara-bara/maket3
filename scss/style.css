@@ -157,7 +157,8 @@ header .container {
   position: relative;
   margin: 0 auto;
 }
-.slider .slick-arrow {
+
+.slick-arrow {
   position: absolute;
   background-color: #d1d1d1;
   margin: -30px 0 0 0;
@@ -167,21 +168,27 @@ header .container {
   font-size: 0;
   top: 50%;
 }
-.slider .slick-arrow.slick-prev {
+
+.slick-arrow.slick-prev {
   left: 135px;
   background: url("../img/sl_arrow_l.png") 0 0/100% no-repeat;
 }
-.slider .slick-arrow.slick-next {
+
+.slick-arrow.slick-next {
   right: 145px;
   background: url("../img/sl_arrow_r.png") 0 0/100% no-repeat;
 }
 
-.slider__img {
+.slider__item {
   margin-top: -62px;
   z-index: 0;
   display: flex;
   justify-content: center;
-  max-width: 100%;
+}
+
+.slider__item img {
+  width: 100%;
+  height: auto;
 }
 
 .slick-list {
@@ -196,10 +203,28 @@ header .container {
   .container {
     max-width: 970px;
   }
+  .slider__item {
+    margin-top: -57px;
+  }
+  .slick-arrow.slick-prev {
+    left: 115px;
+  }
+  .slick-arrow.slick-next {
+    right: 125px;
+  }
 }
 @media (max-width: 992px) {
   .container {
     max-width: 750px;
+  }
+  .slider__item {
+    margin-top: -46px;
+  }
+  .slick-arrow.slick-prev {
+    left: 23px;
+  }
+  .slick-arrow.slick-next {
+    right: 23px;
   }
 }
 @media (max-width: 937px) {
@@ -209,18 +234,37 @@ header .container {
     margin-right: 5px;
     font-size: 29px;
   }
+  .slick-arrow {
+    width: 25px;
+    height: 51px;
+  }
+  .slider__item {
+    margin-top: -40px;
+  }
 }
 @media (max-width: 860px) {
   .menu__link {
     font-size: 27px;
+  }
+  .slider__item {
+    margin-top: -35px;
   }
 }
 @media (max-width: 808px) {
   .menu__link {
     font-size: 25px;
   }
+  .slider__item {
+    margin-top: -28px;
+  }
 }
 @media (max-width: 768px) {
+  .slider__item {
+    margin-top: -20px;
+  }
+  .menu {
+    height: 60px;
+  }
   .menu__button {
     width: 30px;
     height: 30px;
@@ -290,17 +334,20 @@ header .container {
 }
 @media (max-width: 550px) {
   header {
-    height: 280px;
+    height: 240px;
   }
   .container {
     flex-direction: column;
   }
   .contacts__phone {
-    margin-top: 10px;
+    font-size: 35px;
   }
   .contacts__feedback {
-    margin-top: 5px;
-    margin-bottom: 10px;
+    margin-top: -10px;
+    font-size: 20px;
+  }
+  .slider__item {
+    margin-top: -15px;
   }
 }
 /* open-sans-regular - latin */
