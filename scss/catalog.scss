@@ -1,0 +1,55 @@
+.breadcrumb {
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+/* Display list items side by side */
+.breadcrumb li{
+  display: inline;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+.breadcrumb li+li:before{
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+.breadcrumb a{
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-decoration: underline;
+  letter-spacing: 0.025em;
+  color: #767676;
+  &.without-decoration{
+    text-decoration: none;
+  }
+}
+
+
+
+/*drop down menu */
+
+.dropdown-menu__list a{
+  color: #767676;
+}
+
+.sub{
+  display: none;
+  margin-left: 15px;
+  color: #767676;
+  position: absolute;
+}
+
+.dropdown-menu__list{
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+}
+
+.dropdown-menu__list li:hover sub{
+  display: block;
+}
