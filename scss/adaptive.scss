@@ -26,6 +26,13 @@
   .slick-arrow.slick-next{
     right: 23px;
   }
+  .right-part__catalog{
+    max-width: 700px;
+  }
+  .goods__list{
+    justify-content: center;
+  }
+
 }
 
 @media (max-width: 937px) {
@@ -42,6 +49,9 @@
   .slider__item{
     margin-top: -40px;
   }
+  .right-part__catalog{
+    max-width: 650px;
+  }
 }
 
 @media (max-width: 860px) {
@@ -51,6 +61,9 @@
   .slider__item{
     margin-top: -35px;
   }
+  .right-part__catalog{
+    max-width: 598px;
+  }
 }
 
 @media (max-width: 808px) {
@@ -59,6 +72,9 @@
   }
   .slider__item{
     margin-top: -28px;
+  }
+  .right-part__catalog{
+    max-width: 530px;
   }
 }
 
@@ -118,6 +134,7 @@
       transform: translateX(0);
     }
   }
+  
   .menu__list {
     display: flex;
     flex-direction: column;
@@ -136,8 +153,60 @@
   .logo{
     margin-top: 10px;
   }
+  .catalog__items{
+    flex-direction: column;
+  }
+  .right-part__catalog{
+    max-width: 760px;
+  }
+
+  .left-part__catalog{
+    display: flex;
+    margin-bottom: 40px;
+  }
+
+  .price-list{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    display: flex;
+  }
+  
+  .price-list__img{
+    margin-left: 125px;
+    margin-top: 20px;
+  }
+  
+  .price-list__text{
+    margin-left: 30px;
+    margin-top: 50px;
+  }
+ 
 }
 
+@media (max-width:714px) {
+  .right-part__catalog{
+    max-width: 708px;
+  }
+  
+  .price-list__img{
+    margin-left: 75px;
+  }
+  .price-list__text{
+    margin-left: 15px;
+  }
+}
+
+@media (max-width:612px) {
+  .right-part__catalog{
+    max-width: 606px;
+  }
+  .price-list__img{
+    margin-left: 50px;
+  }
+  .price-list__text a{
+    font-size: 25px;
+  }
+}
 
 @media (max-width:550px) {
   header {
@@ -155,5 +224,54 @@
   }
   .slider__item{
     margin-top: -15px;
+  }
+  
+  .price-list__img{
+    margin-left: 30px;
+    margin-top: 0px;
+  }
+  
+  .price-list__text{
+    font-size: 23px;
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+  .price-list{
+    flex-direction: column;
+  }
+  
+}
+
+@media (max-width:440px) {
+  .price-list__text{
+    margin-left: 5px;
+  }
+}
+
+@media (max-width:412px) {
+  .right-part__catalog{
+    max-width: 312px;
+  }
+  .information{
+    flex-direction: column;
+  }
+  .info{
+    max-width: 310px;
+    padding: 0 5px;
+  }
+  .information__main{
+    margin-bottom: 30px;
+  }
+  
+  .price-list__img{
+    margin-left: 0px;
+  }
+  
+  .price-list__text{
+    margin-left: 0px;
+  }
+
+  .price-list__text a{
+    font-size: 16px;
   }
 }

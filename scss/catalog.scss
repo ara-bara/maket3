@@ -93,7 +93,7 @@
   display: block;
 }
 
-.dropdown-menu__list>li:hover .sub-real-estate{
+.dropdown-menu__list>li:hover .sub-realestate{
   display: block;
 }
 
@@ -119,14 +119,15 @@
   flex-wrap: wrap;
 }
 
-.goods__item{
+.good__item{
   width: 240px;
   height: 380px;
   background: #dcdcdc;
   margin-right: 15px;
+  margin-bottom: 20px;
 }
 
-.good_img{
+.good-img{
   margin: 15px;
 }
 
@@ -163,9 +164,6 @@
   margin-left: 20px;
 }
 
-.goods__item{
-  margin-bottom: 20px;
-}
 .pages{
   height: 115px;
   display: flex;
@@ -197,11 +195,10 @@
   margin-bottom: 205px;
 }
 
-.information__direction{
+.info{
   width: 370px;
 }
 
 .information__main{
-  width: 370px;
   margin-right: 40px;
 }
