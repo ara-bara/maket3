@@ -1,10 +1,4 @@
 @import "nullstyle.scss";
-@import "header.scss";
-@import "menu.scss";
-@import "slider.scss";
-@import "catalog.scss";
-@import "adaptive.scss";
-
 
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -51,3 +45,10 @@ body{
   margin: 0 auto;
   padding: 0 10px;
 }
+
+
+@import "header.scss";
+@import "menu.scss";
+@import "slider.scss";
+@import "catalog.scss";
+@import "adaptive.scss";
