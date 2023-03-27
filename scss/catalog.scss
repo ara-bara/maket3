@@ -32,15 +32,6 @@
   display: flex;
 }
 
-.left-part__catalog{
-  flex-basis: 180px;
-}
-
-.right-part__catalog{
-  flex-basis: 800px;
-  margin-left: 20px;
-}
-
 /*drop down menu */
 .dropdown-menu{
   position: relative;
@@ -51,34 +42,35 @@
   line-height: 30px;
   font-weight: 400;
   letter-spacing: 0.025em;
+  width: 200px;
 }
 
 .sub{
   position: relative;
   left: 0;
-  top: 0; 
-  margin-left: 10px;
-  color: #767676;
+  top: 0;
   display: none;
   font-size: 14px;
   line-height: 22px;
 }
 
+.sub li:before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border: 3px solid black;
+  border-radius: 50%;
+  margin-right: 4px;
+}
+
+.sub>li:hover a{
+  text-decoration: underline;
+  color: #010101;;
+}
+
 .dropdown-menu__list a{
   color: #767676;
-}
-
-.price-list__img{
-  margin-top: 110px;
-  margin-left: 45px;
-}
-
-.prive-list__text{
-  font-size: 30px;
-  line-height: 25px;
-  font-weight: 700;
-  letter-spacing: 0.025em;
-  color: #444444;
 }
 
 .dropdown-menu__list>li:hover .sub-cars{
@@ -105,16 +97,111 @@
   display: block;
 }
 
+.price-list__img{
+  margin-top: 110px;
+  margin-left: 45px;
+}
+
+.price-list__text a{
+  font-size: 30px;
+  line-height: 25px;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  color: #444444;
+}
+
 .item:hover{
   text-decoration: underline;
 }
 
-.good_1{
-  width: 250px;
+.goods__list{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.goods__item{
+  width: 240px;
   height: 380px;
   background: #dcdcdc;
+  margin-right: 15px;
 }
 
 .good_img{
-  margin: 20px;
+  margin: 15px;
+}
+
+.good-text{
+  margin-left: 20px;
+}
+
+.good-text a{
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  color: #767676;
+}
+
+.good-price{
+  font-size: 28px;
+  line-height: 18px;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  color: #444444;
+}
+
+.price-card{
+  display: flex;
+  margin-top: 55px;
+}
+
+.basket{
+  margin-left: 65px;
+}
+
+.good-price{
+  margin-left: 20px;
+}
+
+.goods__item{
+  margin-bottom: 20px;
+}
+.pages{
+  height: 115px;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  border-bottom: 1px solid black;
+}
+
+.pages a{
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  letter-spacing: 0.565em;
+  color: #767676;
+}
+.pages a:hover{
+  font-size: 18px;
+  color: #444444;
+}
+
+.information{
+  display: flex;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  color: #767676;
+  margin-top: 30px;
+  margin-bottom: 205px;
+}
+
+.information__direction{
+  width: 370px;
+}
+
+.information__main{
+  width: 370px;
+  margin-right: 40px;
 }
