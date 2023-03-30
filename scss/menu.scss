@@ -4,13 +4,16 @@
   font-size: 30px;
   line-height: 1.2;
   font-weight: 400;
-  letter-spacing: 0.025em;
   color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 10000000;
   position: relative;
+}
+
+.menu__burger{
+  width: 980px;
 }
 
 .menu__list{
@@ -21,8 +24,7 @@
 
 .menu__link{
   color: white;
-  padding: 0 10px 0 0;
-  margin: 0 10px 0 0;
+  padding: 0 5px;
   border-right: 2px solid white;
   &:last-child{
     border-right: none;

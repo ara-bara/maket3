@@ -21,9 +21,6 @@
   url('../fonts/OpenSans-CondensedLight.woff') format('woff'),
   url('../fonts/OpenSans-CondLight.ttf') format('truetype'),
   url('../fonts/OpenSans-CondensedLight.svg#OpenSans-CondensedLight') format('svg');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
 }
 
 
@@ -37,7 +34,6 @@ body{
 .wrapper{
   height: 100%;
   width: 100%;
-  overflow-block: hidden;
 }
 
 .container{
@@ -51,4 +47,5 @@ body{
 @import "menu.scss";
 @import "slider.scss";
 @import "catalog.scss";
+@import "footer.scss";
 @import "adaptive.scss";

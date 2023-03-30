@@ -1,0 +1,42 @@
+footer{
+  height: 220px;
+  background: #767676;
+  .container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+  }
+}
+
+.copyright a{
+  line-height: 22px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.footer-menu{
+  display: flex;
+  flex-direction: column;
+  line-height: 26px;
+}
+.footer-menu a{
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.author{
+  display: flex;
+}
+
+.author__text{
+  line-height: 22px;
+  font-weight: 400;
+  margin-left: 5px;
+  margin-top: -5px;
+}
+
+.author__text a{
+  color: #ffffff;
+}
