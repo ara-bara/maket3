@@ -8,7 +8,7 @@
 	</head>
 	<body>
 		<div class="wrapper">
-			<header>
+			<header id="header">
 				<div class="container">
 					<div class="logo">
 						<a href="#">
@@ -18,7 +18,7 @@
 					<div class="contacts">
 						<a class="contacts__phone" href="tel:+7(499)777-77-77">+7(499)777-77-77</a>
 						<a class="contacts__phone" href="tel:+7(499)777-77-77">+7(499)777-77-77</a>
-						<a class="contacts__feedback" href="#">Обратная связь</a>
+						<a class="contacts__feedback" href="#popup">Обратная связь</a>
 					</div>
 				</div>
 			</header>
@@ -60,7 +60,7 @@
 							<div class="left-part__catalog">
 								<div class="dropdown-menu">
 									<ul class="dropdown-menu__list">
-										<li><a class="cars item" href="#">Автомобили</a>
+										<li><a class="cars item">Автомобили</a>
 											<ul class="sub-cars sub">
 												<li><a href="#">BMW</a></li>
 												<li><a href="#">Mercedes</a></li>
@@ -199,6 +199,26 @@
 					</div>
 				</div>
 			</footer>
+			<div id="popup" class="popup">
+				<div class="popup__body">
+					<form action="#" method="get">
+						<a class="popup__close" href="#header">
+							<span></span>
+							<span></span>
+						</a>
+						<h2>Обратная связь</h2>
+						<label for="fname">Ваше имя *</label>
+						<input class="js-name-input _req" type="text" id="fname" name="firstname" placeholder="Поле обязательно для заполнения" pattern="[А-Яа-яЁё]*" title="Введите русские буквы" required>
+						<label for="phone">Телефон *</label>
+						<input class="js-tel-input _req" type="tel" id="phone" name="phone" placeholder="Поле обязательно для заполнения" pattern="[0-9]+" title="Введите только цифры" required>
+						<label for="email">Email *</label>
+						<input class="js-email-input _req" type="email" id="email" name="email" placeholder="Поле обязательно для заполнения" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+						<label for="message">Сообщение</label>
+						<textarea id="message" name="message"></textarea>
+						<button type="submit" class="form__button">ОТПРАВИТЬ</button>
+					</form>
+				</div>
+			</div>
 		</div>
 		<script src="https://code.jquery.com/jquery-3.6.4.min.js"> </script>
 		<script src="js/slick.min.js"> </script>
