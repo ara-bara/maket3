@@ -307,30 +307,6 @@ header .container {
   color: #767676;
 }
 
-.dropdown-menu__list > li:hover .sub-cars {
-  display: block;
-}
-
-.dropdown-menu__list > li:hover .sub-appliances {
-  display: block;
-}
-
-.dropdown-menu__list > li:hover .sub-mobile {
-  display: block;
-}
-
-.dropdown-menu__list > li:hover .sub-computers {
-  display: block;
-}
-
-.dropdown-menu__list > li:hover .sub-clothes {
-  display: block;
-}
-
-.dropdown-menu__list > li:hover .sub-realestate {
-  display: block;
-}
-
 .price-list__img {
   margin-top: 110px;
   margin-left: 45px;
@@ -424,6 +400,28 @@ header .container {
 
 .information__main {
   margin-right: 40px;
+}
+
+/* Сховати checkbox */
+input[type=checkbox] {
+  display: none;
+}
+
+/* Сховати підменю */
+.sub {
+  display: none;
+}
+
+/* Показати підменю, коли checkbox відмічений */
+input[type=checkbox]:checked + .sub {
+  display: block;
+}
+
+/* Стилі для label */
+.item {
+  cursor: pointer;
+  color: #767676;
+  display: block;
 }
 
 footer {
@@ -520,23 +518,15 @@ form {
   position: relative;
 }
 
-input[type=text], input[type=tel], input[type=email] {
+input {
   width: 341px;
   height: 42px;
   background-color: #ffffff;
   border: 1px solid #c3c3c3;
 }
 
-input[type=text]:invalid:not(:focus):not(placeholder-shown),
-input[type=tel]:invalid:not(:focus):not(placeholder-shown),
-input[type=email]:invalid:not(:focus):not(placeholder-shown) {
+input:invalid:not(:placeholder-shown) {
   box-shadow: inset 0 0 13px 0 rgba(228, 106, 106, 0.74);
-}
-
-input[type=text]:empty,
-input[type=tel]:empty,
-input[type=email]:empty {
-  box-shadow: none;
 }
 
 textarea {
@@ -558,7 +548,7 @@ input::placeholder {
   line-height: 1.2;
   font-weight: 400;
   font-style: italic;
-  color: #dc7f7f;
+  color: #777777;
 }
 
 h2 {
@@ -574,7 +564,7 @@ input {
   margin: 0 auto;
 }
 
-label {
+.label {
   margin: 15px auto 5px auto;
 }
 

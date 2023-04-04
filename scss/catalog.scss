@@ -71,30 +71,6 @@
   color: #767676;
 }
 
-.dropdown-menu__list>li:hover .sub-cars{
-  display: block;
-}
-
-.dropdown-menu__list>li:hover .sub-appliances{
-  display: block;
-}
-
-.dropdown-menu__list>li:hover .sub-mobile{
-  display: block;
-}
-
-.dropdown-menu__list>li:hover .sub-computers{
-  display: block;
-}
-
-.dropdown-menu__list>li:hover .sub-clothes{
-  display: block;
-}
-
-.dropdown-menu__list>li:hover .sub-realestate{
-  display: block;
-}
-
 .price-list__img{
   margin-top: 110px;
   margin-left: 45px;
@@ -187,4 +163,26 @@
 
 .information__main{
   margin-right: 40px;
+}
+
+/* Сховати checkbox */
+input[type="checkbox"] {
+  display: none;
+}
+
+/* Сховати підменю */
+.sub {
+  display: none;
+}
+
+/* Показати підменю, коли checkbox відмічений */
+input[type="checkbox"]:checked + .sub {
+  display: block;
+}
+
+/* Стилі для label */
+.item {
+  cursor: pointer;
+  color: #767676;
+  display: block;
 }

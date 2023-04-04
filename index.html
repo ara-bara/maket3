@@ -60,51 +60,59 @@
 							<div class="left-part__catalog">
 								<div class="dropdown-menu">
 									<ul class="dropdown-menu__list">
-										<li><a class="cars item">Автомобили</a>
-											<ul class="sub-cars sub">
-												<li><a href="#">BMW</a></li>
-												<li><a href="#">Mercedes</a></li>
-												<li><a href="#">Lexus</a></li>
-												<li><a href="#">Volvo</a></li>
-											</ul>
-										</li>
-										<li><a class="appliances item" href="#">Бытовая техника</a>
-											<ul class="sub-appliances sub">
-												<li><a href="#">Микроволновки</a></li>
-												<li><a href="#">Холодильники</a></li>
-												<li><a href="#">Посудомоечные машины</a></li>
-												<li><a href="#">Чайники</a></li>
-											</ul>
-										</li>
-										<li><a class="mobile item" href="#">Мобильная техника</a>
-											<ul class="sub-mobile sub">
-												<li><a href="#">Телефоны</a></li>
-												<li><a href="#">Аксессуары</a></li>
-												<li><a href="#">Комплектующие</a></li>
-											</ul>
-										</li>
-										<li><a class="computers item" href="#">Компьютеры</a>
-											<ul class="sub-computers sub">
-												<li><a href="#">Компьютеры</a></li>
-												<li><a href="#">Аксессуары</a></li>
-												<li><a href="#">Комплектующие</a></li>
-											</ul>
-										</li>
-										<li><a class="clothes item" href="#">Одежда</a>
-											<ul class="sub-clothes sub">
-												<li><a href="#">Для женщин</a></li>
-												<li><a href="#">Для мужчин</a></li>
-												<li><a href="#">Для детей</a></li>
-											</ul>
-										</li>
-										<li><a class="realestate item" href="#">Недвижимость</a>
-											<ul class="sub-realestate sub">
-												<li><a href="#">Дома</a></li>
-												<li><a href="#">Квартиры</a></li>
-												<li><a href="#">Дачи</a></li>
-												<li><a href="#">Офисы</a></li>
-											</ul>
-										</li>
+										<label class="item" for="toggle-cars">Автомобили</label>
+										<input type="checkbox" id="toggle-cars">
+
+										<ul class="cars sub">
+											<li><a href="#">BMW</a></li>
+											<li><a href="#">Mercedes</a></li>
+											<li><a href="#">Lexus</a></li>
+										</ul>
+										<label class="item" for="toggle-appliances">Бытовая техника</label>
+										<input  type="checkbox" id="toggle-appliances">
+
+										<ul class="appliances sub">
+											<li><a href="#">Бытовая техника</a></li>
+											<li><a href="#">Холодильники</a></li>
+											<li><a href="#">Посудомоечные машины</a></li>
+											<li><a href="#">Чайники</a></li>
+										</ul>
+
+										<label class="item" for="toggle-mobile">Мобильная техника</label>
+										<input type="checkbox" id="toggle-mobile">
+
+										<ul class="mobile sub">
+											<li><a href="#">Телефоны</a></li>
+											<li><a href="#">Аксессуары</a></li>
+											<li><a href="#">Комплектующие</a></li>
+										</ul>
+
+										<label class="item" for="toggle-computers">Компьютеры</label>
+										<input type="checkbox" id="toggle-computers">
+
+										<ul class="computers sub">
+											<li><a href="#">Телефоны</a></li>
+											<li><a href="#">Аксессуары</a></li>
+											<li><a href="#">Комплектующие</a></li>
+										</ul>
+
+										<label class="item" for="toggle-clothes">Одежда</label>
+										<input type="checkbox" id="toggle-clothes">
+
+										<ul class="clothes sub">
+											<li><a href="#">Для женщин</a></li>
+											<li><a href="#">Для мужчин</a></li>
+											<li><a href="#">Для детей</a></li>
+										</ul>
+
+										<label class="item" for="toggle-realestate">Недвижимость</label>
+										<input type="checkbox" id="toggle-realestate">
+
+										<ul class="realestate sub">
+											<li><a href="#">Дома</a></li>
+											<li><a href="#">Квартиры</a></li>
+											<li><a href="#">Дачи</a></li>
+										</ul>
 									</ul>
 								</div>
 								<div class="price-list">
@@ -207,13 +215,13 @@
 							<span></span>
 						</a>
 						<h2>Обратная связь</h2>
-						<label for="fname">Ваше имя *</label>
-						<input class="js-name-input _req" type="text" id="fname" name="firstname" placeholder="Поле обязательно для заполнения" pattern="[А-Яа-яЁё]*" title="Введите русские буквы" required>
-						<label for="phone">Телефон *</label>
-						<input class="js-tel-input _req" type="tel" id="phone" name="phone" placeholder="Поле обязательно для заполнения" pattern="[0-9]+" title="Введите только цифры" required>
-						<label for="email">Email *</label>
-						<input class="js-email-input _req" type="email" id="email" name="email" placeholder="Поле обязательно для заполнения" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
-						<label for="message">Сообщение</label>
+						<label class="label" for="fname">Ваше имя *</label>
+						<input class="js-name-input _req" type="text" id="fname" name="firstname" placeholder="Имя" pattern="[А-Яа-яЁё]*" title="Введите русские буквы" required>
+						<label class="label" for="phone">Телефон *</label>
+						<input class="js-tel-input _req" type="tel" id="phone" name="phone" placeholder="+7 123-4567 901" pattern="[0-9]+" title="Введите только цифры" required>
+						<label class="label" for="email">Email *</label>
+						<input class="js-email-input _req" type="email" id="email" name="email" placeholder="example@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+						<label class="label" for="message">Сообщение</label>
 						<textarea id="message" name="message"></textarea>
 						<button type="submit" class="form__button">ОТПРАВИТЬ</button>
 					</form>
