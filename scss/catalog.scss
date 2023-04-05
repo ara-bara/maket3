@@ -180,9 +180,14 @@ input[type="checkbox"]:checked + .sub {
   display: block;
 }
 
+
 /* Стилі для label */
 .item {
   cursor: pointer;
   color: #767676;
   display: block;
+}
+
+.item:checked{
+  text-decoration: underline;
 }
