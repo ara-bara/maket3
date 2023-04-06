@@ -13,6 +13,27 @@ header .container{
 .logo{
   max-width: 273px;
   height: 100px;
+  display: flex;
+}
+
+.logo a{
+  color: #777777;
+}
+
+.logo__text{
+  margin-left: 15px;
+}
+
+.text__top{
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 5px;
+  margin-bottom: 25px;
+}
+
+.text__bottom{
+  font-size: 13px;
+  font-weight: 100;
 }
 
 .contacts__phone{
